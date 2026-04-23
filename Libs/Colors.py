@@ -1,0 +1,16 @@
+
+class Colors:
+    GREEN = '\033[92m'
+    BRIGHT_GREEN = '\033[1m\033[92m'
+    CYAN = '\033[96m'
+    HEADER = '\033[95m'
+    RED = '\033[91m'
+    YELLOW = '\033[93m'
+    ENDC = '\033[0m'
+    BOLD = '\033[1m'
+    BLUE = '\033[94m'
+    UNDERLINE = '\033[4m'   
+    OKBLUE = '\033[94m'
+    OKGREEN = '\033[92m'
+    WARNING = '\033[93m'
+    FAIL = '\033[91m'
