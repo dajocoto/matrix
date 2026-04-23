@@ -13,7 +13,7 @@ def getData():
         data = yaml.safe_load(f)
 
     if not isinstance(data['codecut'], dict):
-        raise ValueError("YAML must contain a 'aiq_dist_path' key")
+        raise ValueError("YAML must contain a 'dist_path' key")
     return data
 
 def getCodeCut():
