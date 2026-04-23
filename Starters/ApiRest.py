@@ -135,7 +135,7 @@ def Connector(setting):
     with httpx.Client(timeout=1.0) as client:
         
         # Configuration
-        base_url = f"http://{setting['dns']}/AppvanceServer/rest"
+        base_url = f"http://{setting['dns']}/st"
         login_payload = {
             "username": setting['username'],
             "password": setting['password']
@@ -152,7 +152,7 @@ def Connector(setting):
                 return
 
             # 3. Verify Login Status (GET)
-            check_url = f"{base_url}/admin/isLogged"
+            check_url = f"{base_url}/Logged"
             params_check = {"_": "1772208894485"}
             check_response = client.get(check_url, params=params_check)        
             
@@ -161,7 +161,7 @@ def Connector(setting):
                 return
             
             # 4. Get Repository List (GET)
-            list_url = f"{base_url}/preferences/getRepositoryNamesByUser"
+            list_url = f"{base_url}/epositoryNamesByUser"
             list_params = {"_": "1772209048785"}
             list_response = client.get(list_url, params=list_params)
             
@@ -174,7 +174,7 @@ def Connector(setting):
             # 5. Loop through each repository to get status
             print("\t" + "─"*60)
             for repo_name in repos:
-                repo_url = f"{base_url}/preferences/getRepositoryStatus"
+                repo_url = f"{base_url}/etRepooryStatus"
                 repo_params = {
                     "name": repo_name,
                     "_": "1772209048719"
@@ -193,7 +193,7 @@ def Connector(setting):
             print("\t" + "─"*60)
 
             # 6. Get License Info
-            license_url = f"{base_url}/license/getBasicLicense"
+            license_url = f"{base_url}/"
             license_response = client.get(license_url, params=list_params)
             
             if license_response.status_code == 200:
