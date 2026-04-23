@@ -15,17 +15,28 @@ Launches the main application script
 No manual setup required.
 
 ⚙️ Features
+
 ✅ Automatic virtual environment setup (venv)
+
 📦 Dependency auto-installation and verification
+
 🔁 Retry mechanism for failed installs
+
 🖥️ Cross-platform launch support (Windows & macOS)
+
 🚀 One-command startup
+
 📂 Project Structure
-.
+
+
 ├── Start.py            # Main application entry point
+
 ├── venv/               # Auto-generated virtual environment
+
 ├── setup.bat           # Windows launcher
+
 ├── setup.sh            # macOS/Linux launcher
+
 └── README.md
 🔧 Requirements
 Python 3.8+
@@ -62,7 +73,9 @@ Then run:
 
 ./setup.sh
 
-[![App](https://github.com/dajocoto/matrix/image.png)](https://github.com/dajocoto/matrix/image.png)
+
+
+<img width="1651" height="922" alt="image" src="https://github.com/user-attachments/assets/a2b0755f-2b74-4f1a-bd21-39f38bf234e1" />
 
 
 🔄 How It Works
