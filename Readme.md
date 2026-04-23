@@ -110,7 +110,7 @@ or
 
 ./setup.sh arg1 arg2
 
-These will be forwarded to setup.py.
+These will be forwarded to Start.py.
 
 ⚠️ Notes
 The virtual environment is created locally and not committed to version control.
@@ -122,4 +122,4 @@ To modify dependencies, edit the install section in the launcher script.
 
 To change the entry point, update:
 
-set SCRIPT_NAME=setup.py
+set SCRIPT_NAME=Start.py
